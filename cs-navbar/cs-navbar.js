@@ -77,7 +77,7 @@ class CustomNavbar extends HTMLElement {
 
     /*
     * Adds main icon
-    * @param{string} iconClassName the Font Awesome icon's name 
+    * @param{string} iconClassName the Font Awesome icon's name (prefix included)
     * return void
     */
     addMainFAIcon = (iconClassName) => {
@@ -118,8 +118,8 @@ class CustomNavbar extends HTMLElement {
 
     /*
     * Adds nav (menu) item | example -> addFAIcon("fas fab fa-linkedin")
-    * @param{string} linkName the name of the given link
-    * @param{string} linkAddress the href of the given address
+    * @param{string} iconClassName the Font Awesome icon's name (prefix included)
+    * @param{string} address optional parameter attaching link to icon
     * return void
     */
     addFAIcon = (iconClassName, address) => {
