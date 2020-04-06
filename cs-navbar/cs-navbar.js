@@ -77,7 +77,8 @@ class CustomNavbar extends HTMLElement {
 
     /*
     * Adds main icon
-    * @param{string} iconClassName the Font Awesome icon's name
+    * @param{string} iconClassName the Font Awesome icon's name 
+    * return void
     */
     addMainFAIcon = (iconClassName) => {
         let navItem = document.createElement("li");
@@ -96,9 +97,10 @@ class CustomNavbar extends HTMLElement {
 
 
     /*
-    * Adds nav (menu) item
+    * Adds nav (menu) item | example -> addLink("Home", "https://localhost/home")
     * @param{string} linkName the name of the given link
     * @param{string} linkAddress the href of the given address
+    * return void
     */
     addLink = (linkName, linkAddress) => {
         let navItem = document.createElement("li");
@@ -115,9 +117,10 @@ class CustomNavbar extends HTMLElement {
 
 
     /*
-    * Adds nav (menu) item
+    * Adds nav (menu) item | example -> addFAIcon("fas fab fa-linkedin")
     * @param{string} linkName the name of the given link
     * @param{string} linkAddress the href of the given address
+    * return void
     */
     addFAIcon = (iconClassName, address) => {
         let navItem = document.createElement("li");
