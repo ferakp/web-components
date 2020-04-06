@@ -31,7 +31,7 @@ addMainFAIcon(iconClassName)
 HOW TO USE THE WEB COMPONENT?
 
 <cs-navbar> component consist of three containers, one for main icon (left corner), one for navigation links (middle) 
-and one for other icons (right corner). If you are using icon containers, please make sure you have font awesome library
+and one for other icons (right corner). If you are using icon containers, please make sure you have Font Awesome library
 loaded. 
 
 1. Download the web component's .js file and add it to the HTML document. 
