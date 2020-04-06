@@ -54,7 +54,7 @@ class CustomNavbar extends HTMLElement {
     /*
     * Event called each time the menu toggle (trigram) is clicked
     * Provides basic features for opening and closing responsive menu 
-    * Adds additionally transition style for height (animation)
+    * Adds additionally transition style for height (animation) 
     */
     menuButtonClicked = () => {
         let element = this._shadowRoot.querySelector(".custom-nav-links");
