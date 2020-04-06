@@ -26,7 +26,7 @@ addMainFAIcon(iconClassName)
 
 
 -----------------------------------------------------------------------------------------------------------------
-
+/*
 
 HOW TO USE THE WEB COMPONENT?
 
@@ -51,3 +51,4 @@ example --------> let csNavbar = document.getElementById("mainNavbar");
                   csNavbar.addLink("Home", "https://localhost/home.html");
                   csNavbar.addLink("About us", "#");
                   csNavbar.addFAIcon("fas fab fa-linkedin");
+                  */
