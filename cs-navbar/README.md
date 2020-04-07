@@ -1,4 +1,13 @@
-#### METHODS
+#### WEB COMPONENTS
+
+These responsive web components are from several different research and commercial projects. Any help with their responsive features, styles or functionalities will be appreciated.
+
+<hr>
+
+
+
+
+#### METHODS AND PROPERTIES
 
 
 * addMainFAIcon</br>
@@ -9,7 +18,7 @@
 
 
 
-#### HOW TO USE?
+#### INSTRUCTIONS
 
 **cs-navbar** component consist of three containers, one for _main icon_ (left corner), one for _navigation links_ (middle) 
 and one for _other icons_ (right corner). If you are using icon containers, please make sure you have **Font Awesome** library loaded. 
