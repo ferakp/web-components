@@ -1,18 +1,17 @@
 ### METHODS
 
 
-addMainFAIcon(iconClassName)</br>
-addLink(linkName, linkAddress)</br>
-addFAIcon = (iconClassName, address)</br>
+* addMainFAIcon()</br>
+* addLink()</br>
+* addFAIcon()</br>
 <hr>
 
 
 
 ### HOW TO USE THE WEB COMPONENT?
 
-<cs-navbar> component consist of three containers, one for main icon (left corner), one for navigation links (middle) 
-and one for other icons (right corner). If you are using icon containers, please make sure you have Font Awesome library
-loaded. 
+<p> cs-navbar component consist of three containers, one for main icon (left corner), one for navigation links (middle) 
+and one for other icons (right corner). If you are using icon containers, please make sure you have **Font Awesome** library loaded. </p>
 
 1. Download the web component's .js file and add it to the HTML document. 
 
