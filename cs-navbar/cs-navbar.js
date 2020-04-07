@@ -41,7 +41,8 @@ class CustomNavbar extends HTMLElement {
         this._shadowRoot.appendChild(trigramList);
 
         // Adds default styles
-        this.initializeStyle();
+        this._style = document.createElement("style");
+        this.initializeStyle(this._style);
 
     }
 
@@ -149,8 +150,7 @@ class CustomNavbar extends HTMLElement {
     /*
     * Adds default styles
     */
-    initializeStyle = () => {
-        let style = document.createElement("style");
+    initializeStyle = (style) => {
         style.innerText = `
                             * {
                                 box-sizing: border-box;
@@ -333,7 +333,7 @@ class CustomNavbar extends HTMLElement {
 
                             }`;
 
-        this._shadowRoot.appendChild(style);
+                            this._shadowRoot.appendChild(style);
     }
 
 
