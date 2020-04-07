@@ -240,7 +240,7 @@ class CustomNavbar extends HTMLElement {
                                 color: rgb(233, 227, 227);
                                 text-decoration: none;
                                 font-weight: bold;
-                                font-size: 18px;
+                                font-size: 16px;
                                 padding: 24px 5px 22px 5px;
                             }
 
@@ -256,7 +256,7 @@ class CustomNavbar extends HTMLElement {
                             .custom-nav-trigram-button {
                                 background-color: transparent;
                                 color: white;
-                                font-size: 1.2rem;
+                                font-size: 1.4rem;
                                 border-radius: 5px;
                                 border-color: transparent;
                                 outline: 0px;
@@ -285,7 +285,7 @@ class CustomNavbar extends HTMLElement {
                                 padding-top: 10px;
                             }
 
-                            @media screen and (min-width: 760px) {
+                            @media screen and (min-width: 750px) {
 
                                 :host {
                                     height: 70px !important;
@@ -297,12 +297,12 @@ class CustomNavbar extends HTMLElement {
                                 }
 
                                 .custom-nav-links .custom-nav-item {
-                                    margin-right: 35px;
+                                    margin-right: 10px;
                                 }
                     
                             }
 
-                            @media screen and (max-width: 760px) {
+                            @media screen and (max-width: 750px) {
 
                                 .custom-nav-item {
                                     margin-left: 10px;
