@@ -1,34 +1,13 @@
-METHODS
+###METHODS
 
-/*
- * Adds main icon | example -> addMainFAIcon("fas fa-square-root-alt")
- * @param{string} iconClassName the Font Awesome icon's name 
- * return void
- */
+
 addMainFAIcon(iconClassName)
-
- /*
-  * Adds nav (menu) item | example -> addLink("Home", "https://localhost/home")
-  * @param{string} linkName the name of the given link
-  * @param{string} linkAddress the href of the given address
-  * return void 
-  */
- addLink(linkName, linkAddress)
- 
- 
-  /*
-   * Adds nav (menu) item | example -> addFAIcon("fas fab fa-linkedin")
-   * @param{string} linkName the name of the given link
-   * @param{string} linkAddress the href of the given address
-   * return void
-   */
- addFAIcon = (iconClassName, address)
+addLink(linkName, linkAddress)
+addFAIcon = (iconClassName, address)
 
 
------------------------------------------------------------------------------------------------------------------
 
-
-HOW TO USE THE WEB COMPONENT?
+##HOW TO USE THE WEB COMPONENT?
 
 <cs-navbar> component consist of three containers, one for main icon (left corner), one for navigation links (middle) 
 and one for other icons (right corner). If you are using icon containers, please make sure you have Font Awesome library
