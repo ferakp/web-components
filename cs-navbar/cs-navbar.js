@@ -285,7 +285,7 @@ class CustomNavbar extends HTMLElement {
                                 padding-top: 10px;
                             }
 
-                            @media screen and (min-width: 815px) {
+                            @media screen and (min-width: 820px) {
 
                                 :host {
                                     height: 70px !important;
@@ -302,7 +302,7 @@ class CustomNavbar extends HTMLElement {
                     
                             }
 
-                            @media screen and (max-width: 815px) {
+                            @media screen and (max-width: 820px) {
 
                                 .custom-nav-item {
                                     margin-left: 10px;
