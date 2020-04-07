@@ -61,7 +61,7 @@ class CustomNavbar extends HTMLElement {
         let element = this._shadowRoot.querySelector(".custom-nav-links");
         if (element.style.display === "none" || element.style.display == "") {
             this.style.transition = "height 1s ease-in-out";
-            this.style.height = (element.children.length*60)+"px";
+            this.style.height = (element.children.length*55)+"px";
             element.style.display = "flex";
         } else {
             this.style.height = "";
