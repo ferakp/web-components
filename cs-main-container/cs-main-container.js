@@ -239,6 +239,8 @@ class CustomMainContainer extends HTMLElement {
                                 max-height: 35vh;
                                 margin-left: auto;
                                 margin-right: auto;
+
+                                box-shadow: 0 8px 8px -12px rgba(0, 0, 0, 0.3);
                             }
                             
                             @media screen and (max-width: 820px) {
