@@ -28,6 +28,7 @@ class CustomMainContainer extends HTMLElement {
 
         let innerContainerRight = document.createElement("div");
         innerContainerRight.className = "inner-container-right";
+        innerContainerRight.style.display = "none";
         container.appendChild(innerContainerRight);
 
         this._shadowRoot.appendChild(container);
@@ -109,11 +110,12 @@ class CustomMainContainer extends HTMLElement {
 
 
     /*
-    * Add image to the right container
+    * Add image to the right container and displays the .inner-container-right named container
     * @oaram {string} imageSrc - the src of the img tag
     */
     addImage = (imageSrc) => {
         let containerRight = this._shadowRoot.querySelector(".inner-container-right");
+        containerRight.style.display = "flex";
         let img = document.createElement("img");
         img.className = "inner-container-right-image";
         img.src = imageSrc;
@@ -216,6 +218,8 @@ class CustomMainContainer extends HTMLElement {
                                 max-height: 50vh;
                                 overflow: hidden;
                                 text-align: center;
+                                display: flex;
+                                flex-direction: column;
                             }
                             
                             .inner-container-right-image {
@@ -252,5 +256,5 @@ class CustomMainContainer extends HTMLElement {
 
 }
 
-// Register the custom element cs-main-container 
+// Registers as the custom element cs-main-container 
 customElements.define("cs-main-container", CustomMainContainer);
