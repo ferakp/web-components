@@ -25,26 +25,32 @@ and one for _other icons_ (right corner). If you are using icon containers, plea
 
 1. Download the web component's .js file and add it to the HTML document. 
 
-```
-<script src="../../web-components/cs-navbar/cs-navbar.js"></script>
-```
+   Example
+
+   ```
+   <script src="../../web-components/cs-navbar/cs-navbar.js"></script>
+   ```
 
 2. Add **cs-navbar** tag with custom class name or id.
 
-```
-<body>
-   <cs-navbar id="mainNavbar"></cs-navbar>
-</body>
-```
+   Example
+
+   ```
+   <body>
+      <cs-navbar id="mainNavbar"></cs-navbar>
+   </body>
+   ```
 
 3. Add icons and links from your custom .js file
 
-```
-let csNavbar = document.getElementById("mainNavbar");
-csNavbar.addMainFAIcon("fas fa-square-root-alt");
-csNavbar.addLink("Home", "https://localhost/home.html");
-csNavbar.addLink("About us", "#");
-csNavbar.addFAIcon("fas fab fa-linkedin");
-```
+   Example
+
+   ```
+   let csNavbar = document.getElementById("mainNavbar");
+   csNavbar.addMainFAIcon("fas fa-square-root-alt");
+   csNavbar.addLink("Home", "https://localhost/home.html");
+   csNavbar.addLink("About us", "#");
+   csNavbar.addFAIcon("fas fab fa-linkedin");
+   ```
                   
 
