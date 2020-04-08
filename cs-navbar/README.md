@@ -56,10 +56,12 @@ and one for _other icons_ (right corner). If you are using icon containers, plea
    csNavbar.addFAIcon("fab fa-github", "https://github.com/....");
    ```
    
-Output
 
-   Full size
-
+   Full size<br>
    ![Image of cs-navbar](https://github.com/ferakp/web-components/blob/master/documentation/images/cs-navbar.png)
-
+   
+   <br>Mobile version<br>
+   ![Image of cs-navbar (mobile)](https://github.com/ferakp/web-components/blob/master/documentation/images/cs-navbar-collapsed-minimized.png)
+   ![Image of cs-navbar (mobile)](https://github.com/ferakp/web-components/blob/master/documentation/images/cs-navbar-collapsed.png)
+   
    
