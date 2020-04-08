@@ -145,7 +145,7 @@ class CustomMainContainer extends HTMLElement {
                             
                             :host {
                                 padding: 3rem;
-                                background-color: rgba(180, 228, 223, 0.192);
+                                background-color: rgba(180, 228, 223, 0.082);
                                 display: grid;
                                 grid-template-rows: auto;
                             }
