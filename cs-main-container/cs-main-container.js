@@ -213,7 +213,7 @@ class CustomMainContainer extends HTMLElement {
                             
 
                             ::slotted(.inner-container-left-box-icon) {
-                                font-size: 3rem;
+                                font-size: 3rem !important;
                                 margin-right: 1rem;
                                 color: white;
                             }
