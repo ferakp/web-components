@@ -8,31 +8,42 @@ class CustomMainContainer extends HTMLElement {
     constructor() {
         super();
 
+        // Attaches the shadow to itself
         this._shadowRoot = this.attachShadow({ mode: "open" });
 
+        // Creates a container
         let container = document.createElement("div");
         container.className = "middle-container";
 
+        // Creates a container of the left side
         let innerContainerLeft = document.createElement("div");
         innerContainerLeft.className = "inner-container-left";
 
+        // Creates a text area inside the container
         let innerContainerLeftTextArea = document.createElement("div");
         innerContainerLeftTextArea.className = "inner-container-left-text-area";
         innerContainerLeft.appendChild(innerContainerLeftTextArea);
 
+        // Creates a box area inside the container
         let innerContainerLeftBoxArea = document.createElement("div");
         innerContainerLeftBoxArea.className = "inner-container-left-box-area";
         innerContainerLeft.appendChild(innerContainerLeftBoxArea);
 
+        // Inserts the container of the left side into the middle-container
         container.appendChild(innerContainerLeft);
 
+        // Creates a container for the right side
         let innerContainerRight = document.createElement("div");
         innerContainerRight.className = "inner-container-right";
         innerContainerRight.style.display = "none";
+
+        // Inserts the container of the right side into the middle-container
         container.appendChild(innerContainerRight);
 
+        // Inserts the middle-container into this element
         this._shadowRoot.appendChild(container);
 
+        // Initializes the style
         this._style = document.createElement("style");
         this.initializeStyle(this._style);
 
