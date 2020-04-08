@@ -46,7 +46,7 @@ Custom responsive container for home pages.
    ```
    
 
-   <br><br>Full size
+   <br><br>Full size<br><br>
    ![Image of cs-main-container](https://github.com/ferakp/web-components/blob/master/documentation/images/cs-main-container.png)
    
    Mobile version<br><br>
