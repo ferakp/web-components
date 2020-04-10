@@ -151,9 +151,7 @@ class CustomMainContainer extends HTMLElement {
                             }
                             
                             .middle-container {
-                                width: 90%;
-                                margin-right: auto;
-                                margin-left: auto;
+                                width: 100%;
                                 display: grid;
                                 grid-template-columns: 6fr 4fr;
                                 
@@ -244,6 +242,10 @@ class CustomMainContainer extends HTMLElement {
                             }
                             
                             @media screen and (max-width: 820px) {
+
+                                :host {
+                                    padding: 0;
+                                }
                             
                                 .inner-container-right {
                                     max-width: 630px;
@@ -255,11 +257,15 @@ class CustomMainContainer extends HTMLElement {
                                     max-height: 200px;
                                 }
                             
-                            
                                 .middle-container {
+                                    width: 100%;
                                     display: flex;
                                     flex-direction: column-reverse;
                                 
+                                }
+
+                                .inner-container-left-text-content {
+                                    font-size: 1rem;
                                 }
                             }
 
