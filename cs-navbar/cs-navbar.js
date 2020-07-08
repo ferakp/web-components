@@ -8,6 +8,8 @@ class CustomNavbar extends HTMLElement {
     constructor() {
         super();
 
+        this._linkEventHandlers = [];
+
         // Sets shadow root
         this._shadowRoot = this.attachShadow({ mode: "open" });
 
@@ -17,7 +19,7 @@ class CustomNavbar extends HTMLElement {
         this._shadowRoot.appendChild(mainIconList);
 
 
-        // Addslist for links
+        // Adds list for links
         let navLinks = document.createElement("ul");
         navLinks.className = "custom-nav custom-nav-links";
         this._shadowRoot.appendChild(navLinks);
@@ -44,7 +46,30 @@ class CustomNavbar extends HTMLElement {
         this._style = document.createElement("style");
         this.initializeStyle(this._style);
 
+
     }
+
+
+
+    /*
+    * This is called when the element has been attached to DOM
+    * It set an ID for the element if it doesn't exist and then attaches event handlers for nav links
+    */
+    connectedCallback() {
+        if (this._id === undefined || this._id === null) {
+            if (this.getAttribute("id")) this._id = this.getAttribute("id");
+            else {
+                let id = "juiaxasdiueia" + (Math.random() * Math.random() * Math.random() * Math.random()).toString(24).substring(3);
+                this.setAttribute("id", id);
+                this._id = id;
+            }
+            for (let navItem of this._shadowRoot.querySelector(".custom-nav-links").children) {
+                navItem.children[0].setAttribute("onclick", "document.getElementById('" + this._id + "').linkClicked(this);")
+            }
+        }
+    };
+
+
 
 
     /*
@@ -61,7 +86,7 @@ class CustomNavbar extends HTMLElement {
         let element = this._shadowRoot.querySelector(".custom-nav-links");
         if (element.style.display === "none" || element.style.display == "") {
             this.style.transition = "height 1s ease-in-out";
-            this.style.height = (element.children.length*55)+"px";
+            this.style.height = (element.children.length * 55) + "px";
             element.style.display = "flex";
         } else {
             this.style.height = "";
@@ -109,8 +134,9 @@ class CustomNavbar extends HTMLElement {
 
         let link = document.createElement("a");
         link.innerHTML = linkName;
+        link.setAttribute("name", linkName);
         link.className = "custom-nav-link";
-        link.href = linkAddress || "#";
+        if (linkAddress) link.href = linkAddress;
         navItem.appendChild(link);
 
         this._shadowRoot.querySelectorAll(".custom-nav-links")[0].appendChild(navItem);
@@ -144,6 +170,32 @@ class CustomNavbar extends HTMLElement {
         link.appendChild(icon);
 
         this.appendChild(link);
+    };
+
+
+    /*
+    * Registers event handler for links
+    * param{function} callback - the callback which will be called when link is clicked
+    */
+    registerEventHandlerForLinks = (callback) => {
+        this._linkEventHandlers.push(callback);
+    };
+
+
+
+    /*
+    * Each time when nav link is clicked this function is called
+    * @param{HTMLElement} element - the element clicked
+    */
+    linkClicked = (element) => {
+        for (let callback of this._linkEventHandlers) {
+            try {
+                callback(element);
+            } catch (err) {
+                console.log("Error occured while callin callbacks");
+            }
+
+        }
     };
 
 
@@ -333,7 +385,7 @@ class CustomNavbar extends HTMLElement {
 
                             }`;
 
-                            this._shadowRoot.appendChild(style);
+        this._shadowRoot.appendChild(style);
     }
 
 
