@@ -211,7 +211,7 @@ class CustomBoxContainer extends HTMLElement {
                                 cursor: pointer;
                             }        
                             
-                            @media screen and (max-width: 750px) {
+                            @media screen and (max-width: 820px) {
                                 
                                 :host {
                                     padding: 0px;
@@ -221,6 +221,7 @@ class CustomBoxContainer extends HTMLElement {
                                 .middle-container {
                                     margin: 0px;
                                     padding: 0px;
+                                    padding-left: 5px;
                                     width: 100%;
                                     overflow: hidden;
                                 }
