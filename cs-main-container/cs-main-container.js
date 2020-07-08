@@ -261,8 +261,10 @@ class CustomMainContainer extends HTMLElement {
                                     width: 100%;
                                     display: flex;
                                     flex-direction: column-reverse;
-                                
+                                    padding-left: 5px;
                                 }
+
+
 
                                 .inner-container-left-text-content {
                                     font-size: 1rem;
