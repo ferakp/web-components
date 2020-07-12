@@ -191,8 +191,7 @@ class CustomMainContainer extends HTMLElement {
                                 flex-direction: row;
                                 text-align: center;
                                 justify-content: center;
-                                align-content: center;
-                            
+                                align-content: center;                  
                                 border: 0px;
                                 background-color: rgb(30, 139, 195);
                                 border-radius: 5px;
@@ -237,7 +236,6 @@ class CustomMainContainer extends HTMLElement {
                                 max-height: 35vh;
                                 margin-left: auto;
                                 margin-right: auto;
-
                                 box-shadow: 0 8px 8px -12px rgba(0, 0, 0, 0.3);
                             }
                             
@@ -261,8 +259,10 @@ class CustomMainContainer extends HTMLElement {
                                     width: 100%;
                                     display: flex;
                                     flex-direction: column-reverse;
-                                
+                                    padding-left: 5px;
                                 }
+
+
 
                                 .inner-container-left-text-content {
                                     font-size: 1rem;
