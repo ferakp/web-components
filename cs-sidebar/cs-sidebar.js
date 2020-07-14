@@ -145,7 +145,7 @@ class CustomSidebar extends HTMLElement {
             z-index: 1;
             overflow-x: hidden;
 
-            background-color: rgb(251, 248, 248);
+            background-color: azure;
         }
 
         .custom-sidebar__container {
